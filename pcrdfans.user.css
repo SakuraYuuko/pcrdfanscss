@@ -7,7 +7,7 @@
 @description    pcrdfans自定义
 @preprocessor stylus
 @var text  bg-url     "背景图片链接（空为无，请保留url()）"  url('https://tva4.sinaimg.cn/large/0072Vf1pgy1foxlhbqhasj31hc0u0qjw.jpg')
-@var checkbox def-color "回到默认按钮颜色"           1
+@var checkbox def-color "回到默认按钮颜色"           0
 ==/UserStyle== */
 
 @-moz-document domain("pcrdfans.com") {
