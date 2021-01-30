@@ -1,0 +1,307 @@
+/* ==UserStyle==
+@name           pcrdfans自定义
+@namespace      https://github.com/SakuraYuuko
+@updateURL https://github.com/SakuraYuuko/pcrdfanscss/pcrdfans.user.css
+@license      CC-BY-SA-4.0
+@version        1.0.0
+@description    pcrdfans自定义
+@preprocessor stylus
+@var text  bg-url     "背景图片链接（空为无，请保留url()）"  url('https://tva4.sinaimg.cn/large/0072Vf1pgy1foxlhbqhasj31hc0u0qjw.jpg')
+@var checkbox def-color "回到默认按钮颜色"           1
+==/UserStyle== */
+
+@-moz-document domain("pcrdfans.com") {
+    body {
+        background-image: bg-url;
+    }
+    if def-color {
+     /*回到默认*/
+    }else{
+            /* 标题相关 */
+        .header_component_style {
+            opacity: 0.8;
+            border-bottom: 1px solid #e73495;
+            box-shadow: 0 1px 5px 0 #cd45ab;
+        }
+        .header_ctn_title {
+            color: #e73495;
+        }
+        a:hover {
+            color: #d880c0;
+        }
+        .header_ctn_logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 30px;
+            margin-right: 10px;
+            border: 3px solid #e73495;
+        }
+
+        .global_itembox_ctn {
+            border: 3px solid #e73495;
+            border-radius: 30px;
+        }
+
+
+        .battle_search_select {
+            border: 1px solid #e73495;
+        }
+
+        .body_title {
+            color: #e73495;
+        }
+
+
+        .ant-menu-item:hover {
+            color: #d880c0;
+        }
+
+        .ant-btn-background-ghost.ant-btn-primary {
+            color: #d880c0;
+            background-color: transparent;
+            border-color: #d880c0;
+            text-shadow: none
+        }
+        .ant-btn-background-ghost.ant-btn-primary:focus,
+        .ant-btn-background-ghost.ant-btn-primary:hover {
+            color: #d880c0;
+            background-color: transparent;
+            border-color: #d880c0;
+        }
+        .ant-btn-background-ghost.ant-btn-primary.active,
+        .ant-btn-background-ghost.ant-btn-primary:active {
+            color: #e73495;
+            background-color: transparent;
+            border-color: #e73495;
+        }
+        .ant-btn-background-ghost.ant-btn-danger {
+            color: #f5222d;
+            background-color: transparent;
+            border-color: #f5222d;
+            text-shadow: none
+        }
+        .ant-btn-background-ghost.ant-btn-danger:focus,
+        .ant-btn-background-ghost.ant-btn-danger:hover {
+            color: #ff4d4f;
+            background-color: transparent;
+            border-color: #ff4d4f
+        }
+        .ant-btn-background-ghost.ant-btn-danger.active,
+        .ant-btn-background-ghost.ant-btn-danger:active {
+            color: #cf1322;
+            background-color: transparent;
+            border-color: #cf1322
+        }
+        .ant-btn-background-ghost.ant-btn-link {
+            color: #e73495;
+        }
+        .ant-btn-background-ghost.ant-btn-link:focus,
+        .ant-btn-background-ghost.ant-btn-link:hover {
+            color: #d880c0;
+            background-color: transparent;
+            border-color: transparent
+        }
+        .ant-btn-background-ghost.ant-btn-link.active,
+        .ant-btn-background-ghost.ant-btn-link:active {
+            color: #d880c0;
+            background-color: transparent;
+            border-color: transparent
+        }
+        .ant-btn-link.active,
+        .ant-btn-link:active {
+            color: #e73495;
+            border-color: #e73495;
+        }
+        .ant-btn-link:focus,
+        .ant-btn-link:hover {
+            color: #e73495;
+            border-color: #e73495;
+        }
+        .ant-btn-danger.active,
+        .ant-btn-danger:active {
+            color: #fff;
+            background-color: #cf1322;
+            border-color: #cf1322
+        }
+        .ant-btn-danger:focus {
+            color: #ff4d4f;
+            background-color: #fff;
+            border-color: #ff4d4f
+        }
+        .ant-btn-danger:hover {
+            color: #fff;
+            background-color: #ff4d4f;
+            border-color: #ff4d4f
+        }
+        .ant-btn-dashed.active,
+        .ant-btn-dashed:active {
+            color: #e73495;
+            background-color: #fff;
+            border-color: #e73495;
+        }
+        .ant-btn-dashed:focus,
+        .ant-btn-dashed:hover {
+            color: #d880c0;
+            background-color: #fff;
+            border-color: #d880c0;
+        }
+        .ant-btn-ghost.active,
+        .ant-btn-ghost:active {
+            color: #e73495;
+            background-color: transparent;
+            border-color: #e73495
+        }
+        .ant-btn-ghost:focus,
+        .ant-btn-ghost:hover {
+            color: #d880c0;
+            background-color: transparent;
+            border-color: #d880c0;
+        }
+        .ant-btn-primary.active,
+        .ant-btn-primary:active {
+            background-color: #e73495;
+            border-color: #e73495;
+        }
+        .ant-btn-primary:focus,
+        .ant-btn-primary:hover {
+            background-color: #d880c0;
+            border-color: #d880c0;
+        }
+        .ant-btn-primary {
+            background-color: #e73495;
+            border-color: #e73495;
+        }
+        .ant-btn.active,
+        .ant-btn:active {
+            color: #e73495;
+            border-color: #e73495;
+        }
+        .ant-btn:focus,
+        .ant-btn:hover {
+            color: #e73495;
+            border-color: #e73495;
+        }
+        .ant-dropdown-menu-dark .ant-dropdown-menu-item-selected,
+        .ant-dropdown-menu-dark .ant-dropdown-menu-item-selected:hover,
+        .ant-dropdown-menu-dark .ant-dropdown-menu-item-selected > a {
+            background: #d880c0;
+        }
+        .ant-dropdown-menu-item-selected,
+        .ant-dropdown-menu-item-selected > a,
+        .ant-dropdown-menu-submenu-title-selected,
+        .ant-dropdown-menu-submenu-title-selected > a {
+            color: #e73495;
+            background-color: #d880c0;
+        }
+        .ant-dropdown-menu-item:hover,
+        .ant-dropdown-menu-submenu-title:hover {
+            background-color: #d880c0;
+        }
+
+
+
+        .battle_search_result {
+            border: 2px solid red;
+        }
+        .battle_search_single_result_ctn {
+            border: 2px solid #72124d;
+        }
+        .battle_more_comment {
+            border: 1px solid #72124d;
+        }
+        .ant-btn-link {
+            color: red;
+        }
+
+        .ant-tabs-nav .ant-tabs-tab:hover {
+            color: #d880c0;
+        }
+        .ant-tabs-nav .ant-tabs-tab:active {
+            color: #e73495;
+        }
+        .ant-tabs-nav .ant-tabs-tab-active {
+            color: #e73495;
+            font-weight: 500
+        }
+        .ant-tabs-ink-bar {
+            bottom: 1px;
+            height: 3px;
+            background-color: #e73495;
+        }
+
+        ::selection {
+            background: #e73495;
+        }
+
+
+
+        .ant-radio-button-wrapper:hover {
+            position: relative;
+            color: #d880c0;
+        }
+        .ant-radio-button-wrapper-checked {
+            z-index: 1;
+            color: #e73495;
+            border-color: #e73495;
+            box-shadow: -1px 0 0 0 #e73495;
+        }
+        .ant-radio-button-wrapper-checked:first-child {
+            border-color: #e73495;
+            box-shadow: none!important
+        }
+        .ant-radio-button-wrapper-checked:hover {
+            color: #d880c0;
+            border-color: #d880c0;
+            box-shadow: -1px 0 0 0 #d880c0;
+        }
+        .ant-radio-button-wrapper-checked:active {
+            color: #e73495;
+            border-color: #e73495;
+            box-shadow: -1px 0 0 0 #e73495;
+        }
+        .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+            background: #e73495;
+            border-color: #e73495;
+        }
+        .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+            background: #d880c0;
+            border-color: #d880c0;
+        }
+        .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):active {
+            background: #e73495;
+            border-color: #e73495;
+        }
+
+
+        .ant-menu-horizontal > .ant-menu-item-active,
+        .ant-menu-horizontal > .ant-menu-item-open,
+        .ant-menu-horizontal > .ant-menu-item-selected,
+        .ant-menu-horizontal > .ant-menu-item:hover,
+        .ant-menu-horizontal > .ant-menu-submenu-active,
+        .ant-menu-horizontal > .ant-menu-submenu-open,
+        .ant-menu-horizontal > .ant-menu-submenu-selected,
+        .ant-menu-horizontal > .ant-menu-submenu:hover {
+            color: #d880c0;
+            border-bottom: 2px solid #d880c0;
+        }
+        .ant-menu-horizontal > .ant-menu-item > a:hover {
+            color: #d880c0;
+        }
+        .ant-menu-horizontal > .ant-menu-item-selected > a {
+            color: #d880c0;
+        }
+        .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after,
+        .ant-menu-submenu-inline > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before,
+        .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after,
+        .ant-menu-submenu-vertical-left > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before,
+        .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after,
+        .ant-menu-submenu-vertical-right > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before,
+        .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:after,
+        .ant-menu-submenu-vertical > .ant-menu-submenu-title:hover .ant-menu-submenu-arrow:before {
+            background: linear-gradient(90deg, #d880c0, #d880c0)
+        }
+        .ant-menu-submenu-title:hover {
+            color: #d880c0;
+        }
+    }
+}
